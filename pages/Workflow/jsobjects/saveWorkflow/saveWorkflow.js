@@ -9,24 +9,24 @@ export default {
 		const ipv6Regex = /^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$/;
 
 		const dropdownValue = envLabel.selectedOptionValue; 
-		const generateUUID = () => {
-			return crypto.randomUUID();
-		};
+		// const generateUUID = () => {
+		// return crypto.randomUUID();
+		// };
 		// const requestData = JSON.stringify({
 		// sourceIp: "192.168.1.1",  // Example source IP
 		// destinationIp: "192.168.1.2"  // Example destination IP
 		// });
 		// const UUID = constants.generateUUID();
 		// const UUID = generateUUID();
-		// const getUUID = () => {
-		// return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-		// const r = Math.random() * 16 | 0;
-		// const v = (c === 'x' ? r : (r & 0x3 | 0x8));
-		// return v.toString(16);
-		// });
-		// };
+		const getUUID = () => {
+			return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+				const r = Math.random() * 16 | 0;
+				const v = (c === 'x' ? r : (r & 0x3 | 0x8));
+				return v.toString(16);
+			});
+		};
 		// return generateUUID();
-		storeValue('UUID', '777777');
+		storeValue('UUID', getUUID());
 		if (dropdownValue && srcIp.text && destIp.text) {
 			if (ipv4Regex.test(srcIp.text) && ipv4Regex.test(destIp.text)) {
 				return Promise.all([
@@ -36,7 +36,7 @@ export default {
 					.then(() => showAlert('New workflow created successfully', 'Success'))
 					.then(() => resetWidget('workflowForm'))
 					.catch((error) => {
-					showAlert("Error: " + error.message);
+					// showAlert("Error: " + error.message);
 				});
 			} 
 			else if (ipv6Regex.test(srcIp.text) && ipv6Regex.test(destIp.text)) {
