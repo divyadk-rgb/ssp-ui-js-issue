@@ -18,20 +18,19 @@ export default {
 		// });
 		// const UUID = constants.generateUUID();
 		// const UUID = generateUUID();
-		const getUUID = () => {
-			return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-				const r = Math.random() * 16 | 0;
-				const v = (c === 'x' ? r : (r & 0x3 | 0x8));
-				return v.toString(16);
-			});
-		};
+		// const getUUID = () => {
+		// return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+		// const r = Math.random() * 16 | 0;
+		// const v = (c === 'x' ? r : (r & 0x3 | 0x8));
+		// return v.toString(16);
+		// });
+		// };
 		// return generateUUID();
-		storeValue('UUID', getUUID());
+		storeValue('UUID', '777777');
 		if (dropdownValue && srcIp.text && destIp.text) {
 			if (ipv4Regex.test(srcIp.text) && ipv4Regex.test(destIp.text)) {
 				return Promise.all([
 					saveWorkflowQuery.run(),
-					// TestApi.run()
 					executeWorkflowApi.run() 
 				])
 					.then(() => showAlert('New workflow created successfully', 'Success'))
@@ -41,11 +40,9 @@ export default {
 				});
 			} 
 			else if (ipv6Regex.test(srcIp.text) && ipv6Regex.test(destIp.text)) {
-				// return saveRequest.run(), createWorkflow.run()
 				return Promise.all([
 					saveWorkflowQuery.run(),   // Run the PostgreSQL query
 					executeWorkflowApi.run() // Run the API call
-					// TestApi.run()
 				])
 					.then(() => showAlert('New workflow created successfully', 'Success'))
 					.then(() => resetWidget('workflowForm'))
