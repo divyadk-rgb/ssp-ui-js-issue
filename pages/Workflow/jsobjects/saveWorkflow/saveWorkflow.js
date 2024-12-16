@@ -48,7 +48,7 @@ export default {
 					// TestApi.run()
 				])
 					.then(() => showAlert('New workflow created successfully', 'Success'))
-					.then(() => resetWidget('Form1'))
+					.then(() => resetWidget('workflowForm'))
 					.catch((error) => {
 					showAlert("Error: " + error.message);
 				});
