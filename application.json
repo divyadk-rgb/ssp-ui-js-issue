@@ -1,0 +1,17 @@
+{
+  "appIsExample": false,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#FBF4ED",
+  "evaluationVersion": 2,
+  "pages": [
+    {
+      "id": "Workflow",
+      "isDefault": true
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
+    }
+  ]
+}

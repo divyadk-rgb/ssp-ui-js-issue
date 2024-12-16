@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6757d4672e3acb5518116a0b_3a5e6e7e-1a61-4371-82ae-b8ebc28ac228",
+  "id": "Workflow_saveWorkflow",
+  "unpublishedCollection": {
+    "name": "saveWorkflow",
+    "pageId": "Workflow",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"requestId": "{{ appsmith.store.UUID}}",
+	// "requestId": "999999",
+	"workflowType": "sample",
+	"targetEnvironment": "{{envLabel.selectedOptionValue }}",
+	"requestData": "{{ 
+	JSON.stringify({
+		sourceIp: srcIp.text,
+		destinationIp: destIp.text
+	}) 
+	}}"
+}
