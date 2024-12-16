@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select * from public.workflows;\n\n\n",
+      "body": "DELETE FROM public.workflows\nWHERE created_at >= CURRENT_DATE::timestamptz\n  AND created_at < (CURRENT_DATE + INTERVAL '1 day')::timestamptz;\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -18,8 +18,15 @@ export default {
 		// });
 		// const UUID = constants.generateUUID();
 		// const UUID = generateUUID();
-
-		storeValue('UUID', generateUUID());
+		const getUUID = () => {
+			return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+				const r = Math.random() * 16 | 0;
+				const v = (c === 'x' ? r : (r & 0x3 | 0x8));
+				return v.toString(16);
+			});
+		};
+		// return generateUUID();
+		storeValue('UUID', getUUID());
 		if (dropdownValue && srcIp.text && destIp.text) {
 			if (ipv4Regex.test(srcIp.text) && ipv4Regex.test(destIp.text)) {
 				return Promise.all([
