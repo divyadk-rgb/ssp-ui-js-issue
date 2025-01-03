@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 33,
+  "bottomRow": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -38,8 +38,10 @@
     "updated_at",
     "requested_by"
   ],
-  "columnUpdatedAt": 1733888491112,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1735702921562,
+  "columnWidthMap": {
+    "request_id": 221
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -99,7 +101,7 @@
   "isVisibleSearch": true,
   "key": "4tzsfebufc",
   "label": "Data",
-  "leftColumn": 12,
+  "leftColumn": 14,
   "minWidth": 450,
   "mobileBottomRow": 33,
   "mobileLeftColumn": 16,
@@ -116,7 +118,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{dashboardTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+      "computedValue": "{{dashboardTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"] + '/'))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -317,7 +319,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 52,
+  "rightColumn": 62,
   "searchKey": "",
   "tableData": "{{ViewWorkflowsQuery.data}}",
   "textSize": "0.875rem",
