@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 20,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -25,28 +25,28 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
+  "mobileBottomRow": 17,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 17,
-  "mobileTopRow": 5,
+  "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "originalBottomRow": 10,
-  "originalTopRow": 4,
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
   "overflow": "NONE",
   "parentColumnSpace": 7.046875,
   "parentId": "a9sg73vxjs",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 10,
   "shouldTruncate": false,
-  "text": "Source IP",
+  "text": "Protocol",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 4,
+  "topRow": 16,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "f0snemamu5",
-  "widgetName": "Text1"
+  "widgetId": "mbh5ldima5",
+  "widgetName": "lblProtocol"
 }
