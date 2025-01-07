@@ -1,1 +1,3 @@
-select * from public.workflows
+DELETE FROM public.workflows
+WHERE created_at >= CURRENT_DATE::timestamptz
+  AND created_at < (CURRENT_DATE + INTERVAL '1 day')::timestamptz;
