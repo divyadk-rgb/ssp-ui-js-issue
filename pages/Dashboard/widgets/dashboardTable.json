@@ -186,7 +186,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{dashboardTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"request_id\"]))}}",
+      "computedValue": "{{dashboardTable.processedTableData.map((currentRow, currentIndex) => ( \"<a href='https://example.com/request/\" + currentRow.request_id + \"' target='_blank'>\" + currentRow.request_id + \"</a>\"))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

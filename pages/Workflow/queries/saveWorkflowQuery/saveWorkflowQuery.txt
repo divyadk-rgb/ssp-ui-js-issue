@@ -1,2 +1,2 @@
 INSERT INTO public.workflows ("request_id", "workflow_type", "requested_by", "environment_label", "request_data","status")
-VALUES ('{{appsmith.store.UUID}}', 'firewallcheck', '{{appsmith.user.username}}', '{{envLabel.selectedOptionValue}}', '{{ JSON.stringify({ sourceIp: srcIp.text, destinationIp: destIp.text }) }}','CREATED');
+VALUES ('{{appsmith.store.UUID}}', 'firewallcheck', '{{appsmith.user.username}}', '{{envLabel.selectedOptionValue}}', '{{ JSON.stringify({ sourceIp: srcIp.text, destinationIp: destIp.text, port:srcPort.text, protocol: protocol.text }) }}','CREATED');
