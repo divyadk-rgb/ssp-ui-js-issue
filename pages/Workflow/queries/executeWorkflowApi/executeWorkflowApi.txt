@@ -6,7 +6,8 @@
 	JSON.stringify({
 		sourceIp: srcIp.text,
 		destinationIp: destIp.text,
-		port: srcPort.text,
+		srcport: srcPort.text,
+		destport: destinationPort.text,
 		protocol: protocol.text
 	}) 
 	}}"
