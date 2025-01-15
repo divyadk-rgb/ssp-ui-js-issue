@@ -1,7 +1,7 @@
 {
   "gitSyncId": "6757d4672e3acb5518116a0b_e1a8ba27-5b88-4d4f-95e4-384289928390",
   "unpublishedPage": {
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "UserDetails",
-    "slug": "userdetails"
+    "name": "WorkflowDetails",
+    "slug": "workflowdetails"
   }
 }

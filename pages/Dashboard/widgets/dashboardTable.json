@@ -115,7 +115,7 @@
   "mobileRightColumn": 50,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onRowSelected": "{{ navigateTo('UserDetails', { id: dashboardTable.selectedRow.request_id }, 'NEW_WINDOW') }}",
+  "onRowSelected": "{{ navigateTo('WorkflowDetails', { id: dashboardTable.selectedRow.request_id }, 'NEW_WINDOW') }}",
   "parentColumnSpace": 14.71875,
   "parentId": "0",
   "parentRowSpace": 10,

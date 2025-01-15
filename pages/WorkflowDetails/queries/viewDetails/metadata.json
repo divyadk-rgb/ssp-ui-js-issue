@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6757d4672e3acb5518116a0b_e993774d-3793-42b9-84c5-d29868361ea7",
-  "id": "UserDetails_viewDetails",
+  "id": "WorkflowDetails_viewDetails",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
     ],
     "executeOnLoad": true,
     "name": "viewDetails",
-    "pageId": "UserDetails",
+    "pageId": "WorkflowDetails",
     "userSetOnLoad": true
   }
 }

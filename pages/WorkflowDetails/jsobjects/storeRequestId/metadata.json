@@ -1,9 +1,9 @@
 {
   "gitSyncId": "6757d4672e3acb5518116a0b_e11cd1e1-4bef-41cf-8231-85e08fefe3e5",
-  "id": "UserDetails_storeRequestId",
+  "id": "WorkflowDetails_storeRequestId",
   "unpublishedCollection": {
     "name": "storeRequestId",
-    "pageId": "UserDetails",
+    "pageId": "WorkflowDetails",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "variables": []
