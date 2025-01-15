@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6757d4672e3acb5518116a0b_643fd52b-af46-4701-9feb-330138734bea",
-  "id": "Dashboard_ViewWorkflowsQuery",
+  "gitSyncId": "6757d4672e3acb5518116a0b_e993774d-3793-42b9-84c5-d29868361ea7",
+  "id": "UserDetails_viewDetails",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT public.workflows.request_id,public.workflows.environment_label, public.workflows.requested_by, public.workflows.created_at, public.workflows.status,public.workflows.updated_at FROM public.workflows\nWHERE public.workflows.requested_by = '{{appsmith.user.email}}';",
+      "body": "SELECT public.workflows.request_id,public.workflows.status,public.workflows.updated_at, public.workflows.response_data, public.workflows.response_err_data FROM public.workflows\nWHERE public.workflows.request_id = '{{appsmith.store.requestId}}';\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "ViewWorkflowsQuery",
-    "pageId": "Dashboard",
-    "userSetOnLoad": false
+    "name": "viewDetails",
+    "pageId": "UserDetails",
+    "userSetOnLoad": true
   }
 }

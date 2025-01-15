@@ -1,0 +1,3 @@
+SELECT public.workflows.request_id,public.workflows.status,public.workflows.updated_at, public.workflows.response_data, public.workflows.response_err_data FROM public.workflows
+WHERE public.workflows.request_id = '{{appsmith.store.requestId}}';
+

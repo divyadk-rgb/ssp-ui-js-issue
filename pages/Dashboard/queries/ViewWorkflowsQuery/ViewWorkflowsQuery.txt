@@ -1,1 +1,2 @@
-SELECT public.workflows.request_id,public.workflows.environment_label, public.workflows.requested_by, public.workflows.created_at, public.workflows.status,public.workflows.updated_at FROM public.workflows;
+SELECT public.workflows.request_id,public.workflows.environment_label, public.workflows.requested_by, public.workflows.created_at, public.workflows.status,public.workflows.updated_at FROM public.workflows
+WHERE public.workflows.requested_by = '{{appsmith.user.email}}';
