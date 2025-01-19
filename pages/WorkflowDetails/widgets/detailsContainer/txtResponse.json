@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "{{ (viewDetails.data[0].response_data || viewDetails.data[0].response_err_data || \"No data available\") }}\n",
+  "text": "{{ (viewDetails.data[0].response_data || viewDetails.data[0].response_err_data || '') }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 15,
