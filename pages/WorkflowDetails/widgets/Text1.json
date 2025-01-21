@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 11,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,15 +11,23 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "true",
   "key": "6ysj8cdpg2",
   "leftColumn": 25,
   "maxDynamicHeight": 9000,
@@ -40,7 +48,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "Workflow Details",
+  "text": "{{ appsmith.store.isUserMatched ? \"Workflow Details\" : \"You don't have permission to access this workflow\" }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 2,
