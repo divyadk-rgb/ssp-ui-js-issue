@@ -1,19 +1,19 @@
 {
-  "gitSyncId": "6757d4672e3acb5518116a0b_d394852b-deec-4a46-bdcd-e96b1cb4d4fb",
-  "id": "Dashboard_Query1",
+  "gitSyncId": "6757d4672e3acb5518116a0b_643fd52b-af46-4701-9feb-330138734bea",
+  "id": "History_ViewWorkflowsQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select * from public.workflows;",
+      "body": "SELECT public.workflows.request_id,public.workflows.environment_label, public.workflows.requested_by, public.workflows.created_at, public.workflows.status,public.workflows.updated_at FROM public.workflows;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
-      "timeoutInMillisecond": 100000
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "Query1",
-    "pageId": "Dashboard",
+    "executeOnLoad": true,
+    "name": "ViewWorkflowsQuery",
+    "pageId": "History",
     "userSetOnLoad": false
   }
 }
