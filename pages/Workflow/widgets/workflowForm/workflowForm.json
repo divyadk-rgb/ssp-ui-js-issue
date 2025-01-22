@@ -81,7 +81,7 @@
   "positioning": "fixed",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 50,
+  "rightColumn": 47,
   "shouldScrollContents": true,
   "topRow": 7,
   "type": "FORM_WIDGET",
