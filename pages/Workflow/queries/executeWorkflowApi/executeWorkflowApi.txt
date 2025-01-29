@@ -1,6 +1,6 @@
 {
 	"requestId": "{{appsmith.store.UUID}}",
-	"workflowType": "firewallcheck",
+	"workflowType": "IP_REACHABILITY_CHECK",
 	"targetEnvironment": "{{envLabel.selectedOptionValue }}",
 	"requestData": "{{ 
 	JSON.stringify({
