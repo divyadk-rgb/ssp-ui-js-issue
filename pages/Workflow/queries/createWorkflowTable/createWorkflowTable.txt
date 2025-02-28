@@ -3,7 +3,7 @@ request_id varchar(64),
 workflow_type varchar(255),
 requested_by varchar(255),
 environment_label varchar(1024),
-created_at TIMESTAMPTZ,
+created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
 updated_at TIMESTAMPTZ,
 request_data varchar,
 status varchar(25)

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "create table workflows (\nrequest_id varchar(64),\nworkflow_type varchar(255),\nrequested_by varchar(255),\nenvironment_label varchar(1024),\ncreated_at TIMESTAMPTZ,\nupdated_at TIMESTAMPTZ,\nrequest_data varchar,\nstatus varchar(25)\n);",
+      "body": "create table workflows (\nrequest_id varchar(64),\nworkflow_type varchar(255),\nrequested_by varchar(255),\nenvironment_label varchar(1024),\ncreated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,\nupdated_at TIMESTAMPTZ,\nrequest_data varchar,\nstatus varchar(25)\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
