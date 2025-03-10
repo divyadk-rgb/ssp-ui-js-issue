@@ -53,7 +53,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"MVP\",\n    \"code\": \"MVP\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"MVP\",\n    \"code\": \"MVP\"\n  },\n\t{\n    \"name\": \"PROD\",\n    \"code\": \"PROD\"\n  }\n]",
   "topRow": 23,
   "type": "SELECT_WIDGET",
   "version": 1,
